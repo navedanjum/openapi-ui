@@ -80,13 +80,26 @@ const applyGroupTags = (prop: string, data: any, path: string, tag: string) => {
 };
 
 const createTaggedSpec = (service: string, data: any) => {
-  const filePath = `./services/${service}/spec.json`;
+  const jsonFilePath = `./services/${service}/spec.json`;
+  const htmlFilePath = `./services/${service}/index.html`;
+  const htmlTemplateFilePath = './html-template/index.html';
   const fileContent = JSON.stringify(data, null, 2);
-  fs.writeFile(filePath, fileContent, err => {
+  fs.writeFile(jsonFilePath, fileContent, err => {
     if (err) {
       console.error(err);
     } else {
-      console.log(`file written successfully at ${filePath}`);
+      console.log(`file written successfully at ${jsonFilePath}`);
+      createHtmlView(htmlTemplateFilePath, htmlFilePath);
+    }
+  });
+};
+
+const createHtmlView = (srcFile: string, destFile: string) => {
+  fs.copyFile(srcFile, destFile, err => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`Created index template at ${destFile}`);
     }
   });
 };

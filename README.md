@@ -4,6 +4,4 @@ See instructuction here : https://github.com/swagger-api/swagger-ui/releases/tag
 
 # TODOs'
 1. Refactor - Build
-2. Inject html view
-3. Swagger UI initializer settings
-4. README Update
+2. README Update
