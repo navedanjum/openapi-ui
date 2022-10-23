@@ -4,9 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export const getLatestRepo = () => {
-  const destDir = `${process.env.REPO_DEST_DIR}`;
-  const repoDir = `${process.env.REPO_NAME}`;
-  const localDir = path.resolve(destDir, repoDir);
+  const localDir = getLocalDir();
   console.log(`${localDir}`);
   const repoExists = fs.existsSync(`${localDir}`);
   const confirmation = repoExists
@@ -25,4 +23,11 @@ export const cloneUpdateRepo = (repoExists = false, localRepo: string) => {
       `cd ${localRepo} && git pull origin ${process.env.BRANCH} --rebase`
     );
   }
+};
+
+export const getLocalDir = () => {
+  const destDir = `${process.env.REPO_DEST_DIR}`;
+  const repoDir = `${process.env.REPO_NAME}`;
+  const localDir = path.resolve(destDir, repoDir);
+  return localDir;
 };
