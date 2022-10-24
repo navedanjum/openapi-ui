@@ -7,7 +7,6 @@ export const getAllSpecFiles = (localSpecDir: string): string[] => {
 
   const filenames = fs.readdirSync(localSpecDir);
   filenames.forEach(file => {
-    console.log(`Swagger spec file ${file}`);
     if (path.extname(file) === '.json') {
       console.log(`Swagger spec file ${file}`);
       specContainer.push(file);
