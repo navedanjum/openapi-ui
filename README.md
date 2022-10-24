@@ -81,5 +81,5 @@ npm run start
 
 ## Additional Information<a name="additional-info"></a>
 - View & Use locally by serving the project 
-- View it on dev server or live server by directory accessing index.html file in created services directory in the project root
+- View it on dev server or live server by directly opening index.html file in created services directory in the project root
 
