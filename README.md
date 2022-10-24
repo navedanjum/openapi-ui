@@ -33,7 +33,10 @@ npm run start
 #Transformed swagger specs and index.html files are created at path `./services/<service_name>/*{json|html}`
 ```
 
-## List of Services<a name="list-of-swagger-services"></a>    
+
+## List of Services<a name="list-of-swagger-services"></a>  
+### Click on the links below to open swagger UI for specific service
+### Click [Main Page](https://navedanjum.github.io/openapi-ui/) to open github pages for this repo
  * [accounts_v1](https://navedanjum.github.io/openapi-ui/services/accounts_v1/)
  * [api_v2010](https://navedanjum.github.io/openapi-ui/services/api_v2010/)
  * [autopilot_v1](https://navedanjum.github.io/openapi-ui/services/autopilot_v1/)
