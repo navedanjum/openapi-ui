@@ -1,5 +1,6 @@
 # OPENAPI-UI
-Repository : https://github.com/navedanjum/openapi-ui
+[Go to Repository](https://github.com/navedanjum/openapi-ui)  
+[Go to github-pages web](https://navedanjum.github.io/openapi-ui/) 
 ## Table of contents
 - [About](#about)
 - [Requirements](#requirements)
@@ -8,7 +9,7 @@ Repository : https://github.com/navedanjum/openapi-ui
 - [Additional Information](#additional-info)
 
 ## About<a name="about"></a>
-### openapi-ui does has the following functionalities 
+### openapi-ui has the following functionalities 
 - It either clones or pulls the latest changes from twilio-oai repository
 - Use the open-api specification from the json files and transforms the spec files such that endpoint can be viewed collectively under a group
 - Displays each of the services in the swagger UI
