@@ -2,10 +2,10 @@
   "name": "openapi-ui",
   "version": "0.0.0",
   "description": "",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "build/src"
+    "dist/"
   ],
   "license": "Apache-2.0",
   "keywords": [],
@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
     "clean": "gts clean",
-    "start": "npm run prepare && node ./dist/index.js",
+    "serve": "serve",
+    "start": "npm run prepare && node ./dist/index.js && npm run serve",
     "compile": "tsc",
     "fix": "gts fix",
     "prepare": "npm run compile",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^14.18.32",
     "gts": "^3.1.1",
+    "serve": "^14.0.1",
     "typescript": "~4.7.0"
   },
   "dependencies": {
